@@ -43,9 +43,16 @@ if ( ! defined( 'WPINC' ) ) {
 /* Plugin
 ---------------------------------------------------------------------------------- */
 
-// Include classes.
-require_once __DIR__ . '/classes/class-wp-taxonomy-options.php';
-require_once __DIR__ . '/classes/class-wp-taxonomy-util.php';
+if ( ! class_exists( 'WP_Taxonomy_Options' ) ) {
 
-// Initialize classes.
-add_action( 'plugins_loaded', array( 'WP_Taxonomy_Util', 'get_instance' ) );
+    require_once __DIR__ . '/classes/class-wp-taxonomy-options.php';
+
+}
+
+if ( ! class_exists( 'WP_Taxonomy_Util' ) ) {
+
+    require_once __DIR__ . '/classes/class-wp-taxonomy-util.php';
+
+    add_action( 'plugins_loaded', array( 'WP_Taxonomy_Util', 'get_instance' ) );
+
+}
