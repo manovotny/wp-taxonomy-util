@@ -52,6 +52,4 @@ if ( ! class_exists( 'WP_Taxonomy_Util' ) ) {
 
     require_once __DIR__ . '/classes/class-wp-taxonomy-util.php';
 
-    add_action( 'plugins_loaded', array( 'WP_Taxonomy_Util', 'get_instance' ) );
-
 }
