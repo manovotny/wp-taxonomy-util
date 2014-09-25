@@ -1,18 +1,4 @@
 <?php
-/**
- * @package WP_Taxonomy_Util
- * @author Michael Novotny <manovotny@gmail.com>
- */
-
-/*
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ CONTENTS /\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\
-
-    1. Properties
-    2. Constructor
-    3. Methods
-
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
-*/
 
 class WP_Taxonomy_Options {
 

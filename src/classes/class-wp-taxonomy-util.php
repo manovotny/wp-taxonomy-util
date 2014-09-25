@@ -1,17 +1,4 @@
 <?php
-/**
- * @package WP_Taxonomy_Util
- * @author Michael Novotny <manovotny@gmail.com>
- */
-
-/*
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ CONTENTS /\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\
-
-    1. Properties
-    2. Methods
-
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
-*/
 
 class WP_Taxonomy_Util {
 
@@ -35,15 +22,12 @@ class WP_Taxonomy_Util {
      */
     public static function get_instance() {
 
-        // Check if an instance has not been created yet.
         if ( null == self::$instance ) {
 
-            // Set instance of class.
             self::$instance = new self;
 
         }
 
-        // Return instance.
         return self::$instance;
 
     }
