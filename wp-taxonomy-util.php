@@ -1,12 +1,6 @@
 <?php
 /**
- * A taxonomy utility for WordPress.
- *
  * @package WP_Taxonomy_Util
- * @author Michael Novotny <manovotny@gmail.com>
- * @license GPL-3.0+
- * @link https://github.com/manovotny/wp-taxonomy-util
- * @copyright 2014 Michael Novotny
  *
  * @wordpress-plugin
  * Plugin Name: WP Taxonomy Util
@@ -17,18 +11,11 @@
  * Author URI: http://manovotny.com
  * License: GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ * Domain Path: /TRANSLATIONS_PATH
+ * Text Domain: TRANSLATIONS_DOMAIN
  * GitHub Plugin URI: https://github.com/manovotny/wp-taxonomy-util
  */
 
-
-/*
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ CONTENTS /\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\
-
-    1. Access
-    2. Plugin
-
-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\
-*/
 
 /* Access
 ---------------------------------------------------------------------------------- */
@@ -39,17 +26,16 @@ if ( ! defined( 'WPINC' ) ) {
 
 }
 
-/* Plugin
+/* Composer
 ---------------------------------------------------------------------------------- */
 
-if ( ! class_exists( 'WP_Taxonomy_Options' ) ) {
+if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
 
-    require_once __DIR__ . '/classes/class-wp-taxonomy-options.php';
-
-}
-
-if ( ! class_exists( 'WP_Taxonomy_Util' ) ) {
-
-    require_once __DIR__ . '/classes/class-wp-taxonomy-util.php';
+    require_once __DIR__ . '/vendor/autoload.php';
 
 }
+
+/* Initialization
+---------------------------------------------------------------------------------- */
+
+require_once __DIR__ . '/src/initialize.php';
