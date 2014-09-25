@@ -169,10 +169,16 @@ class WP_Taxonomy_Options {
 
     /**
      * Initializes plugin.
+     *
+     * @param string $singular Singular name of the taxonomy.
+     * @param string $plural Plural name of the taxonomy.
+     * @param string $slug Slug of the taxonomy.
+     * @param string $post_type Post type the taxonomy belongs to.
+     * @param boolean $hierarchical If the taxonomy should be hierarchical (ie. categories) or flat (ie. tags).
      */
     public function __construct( $singular = '', $plural = '', $slug = '', $post_type = '', $hierarchical = true ) {
 
-        // Set properties
+        // Set properties.
         $this->singular_name = $singular;
         $this->plural_name = $plural;
         $this->slug = $slug;
