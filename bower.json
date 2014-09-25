@@ -1,6 +1,6 @@
 {
     "name": "wp-taxonomy-util",
-    "version": "0.2.2",
+    "version": "1.0.0",
     "description": "A taxonomy utility for WordPress.",
     "repository": {
         "type": "git",

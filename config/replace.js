@@ -16,11 +16,11 @@ module.exports = (function () {
             name: 'WP Taxonomy Util',
             slug: 'wp-taxonomy-util',
             url: 'https://github.com/manovotny/wp-taxonomy-util',
-            version: '0.2.2'
+            version: '1.0.0'
         },
         translations: {
-            domain: 'TRANSLATIONS_DOMAIN',
-            path: 'TRANSLATIONS_PATH'
+            domain: 'wp-taxonomy-util',
+            path: 'lang'
         }
     };
 
