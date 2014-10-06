@@ -16,7 +16,7 @@ module.exports = (function () {
             name: 'WP Taxonomy Util',
             slug: 'wp-taxonomy-util',
             url: 'https://github.com/manovotny/wp-taxonomy-util',
-            version: '1.0.0'
+            version: '1.0.1'
         },
         translations: {
             domain: 'wp-taxonomy-util',

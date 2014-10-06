@@ -25,7 +25,7 @@ module.exports = (function () {
             slug: 'wp-taxonomy-util',
             type: 'plugin', // Should be `plugin` or `theme`.
             url: 'https://github.com/manovotny/wp-taxonomy-util',
-            version: '1.0.0'
+            version: '1.0.1'
         }
     };
 
